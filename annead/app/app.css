@@ -24,3 +24,6 @@ nav{
   background-color: blanchedalmond;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+Link.link{
+  flex-direction: row;
+}
