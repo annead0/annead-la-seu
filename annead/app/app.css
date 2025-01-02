@@ -1,7 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+:root{
+  --col:blanchedalmond;
+  --font:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 html,
 body {
   @apply bg-white dark:bg-gray-950;
@@ -21,9 +24,11 @@ nav{
   text-align: left;
 }
 .container{
-  background-color: blanchedalmond;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color:var(--col);
+  font-family: var(--font)
 }
+
 Link.link{
   flex-direction: row;
+  font:--col;
 }
