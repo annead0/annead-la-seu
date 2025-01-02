@@ -1,8 +1,9 @@
 import {
   isRouteErrorResponse,
   Links,
-  Meta,
+  Link,
   Outlet,
+  Meta,
   Scripts,
   ScrollRestoration,
 } from "react-router";
@@ -12,6 +13,7 @@ import stylesheet from "./app.css?url";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
+  {rel:"stylesheet", href:"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"},
   {
     rel: "preconnect",
     href: "https://fonts.gstatic.com",
@@ -26,19 +28,52 @@ export const links: Route.LinksFunction = () => [
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
+    <>
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <Meta />
-        <Links />
       </head>
       <body>
-        {children}
-        <ScrollRestoration />
-        <Scripts />
+        <nav>
+        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+  <div className="container-fluid">
+    <Link className="navbar-brand" to="#">Annead</Link>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        <li className="nav-item">
+          <Link className="nav-link active" aria-current="page" to="#">Casa|Home</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="#">Link</Link>
+        </li>
+        <li className="nav-item dropdown">
+          <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </Link>
+          <ul className="dropdown-menu">
+            <li><Link className="dropdown-item" to="#">Action</Link></li>
+            <li><Link className="dropdown-item" to="#">Another action</Link></li>
+            <li><Link className="dropdown-item" to="#">Something else here</Link></li>
+          </ul>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+        </ul>
+    </div>
+      </div>
+      </nav>
+        </nav>
+        <div id="detail">
+          <Outlet/>
+        </div>
       </body>
     </html>
+    </>
   );
 }
 
