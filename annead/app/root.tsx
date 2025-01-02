@@ -7,13 +7,12 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import type { Route } from "./+types/root";
 import stylesheet from "./app.css?url";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
-  {rel:"stylesheet", href:"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"},
   {
     rel: "preconnect",
     href: "https://fonts.gstatic.com",
