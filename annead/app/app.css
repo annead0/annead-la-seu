@@ -10,3 +10,17 @@ body {
     color-scheme: dark;
   }
 }
+nav{
+  width:20%;
+  border-radius:1rem;
+  box-shadow:5px 10px 5px gold;
+  border-width:1px;
+  border-color: olivedrab;
+}
+.logo{
+  text-align: left;
+}
+.container{
+  background-color: blanchedalmond;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
