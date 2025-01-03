@@ -10,7 +10,7 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css';
 import type { Route } from "./+types/root";
 import stylesheet from "./app.css?url";
-
+import logo from "../public/image.png"
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
@@ -23,6 +23,7 @@ export const links: Route.LinksFunction = () => [
     href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
   },*/
   { rel: "stylesheet", href: stylesheet },
+  {rel:"icon",type:"image/x-icon", href:logo}
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -34,7 +35,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta/>
         <Links/>
-        <link rel="icon" type="image/x-icon" href="/image.png"/>
+        <link rel="icon" type="image/x-icon" href="../public/image.png"/>
       </head>
       <body>
         <nav>
