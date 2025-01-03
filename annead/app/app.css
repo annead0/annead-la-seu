@@ -12,7 +12,8 @@ body {
   }
 }
 nav{
-  width:20%;
+  width:100%;
+  height:20%;
   border-radius:1rem;
   box-shadow:5px 10px 5px gold;
   border-width:1px;
