@@ -41,3 +41,10 @@ Link.link{
   flex-direction: row;
   font:--col;
 }
+img .logoImg{
+  position: fixed;
+  justify-content: right;
+  flex: content;
+  flex-direction: row;
+  
+}
