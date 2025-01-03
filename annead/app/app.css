@@ -44,7 +44,7 @@ Link.link{
 img .logoImg{
   position: fixed;
   justify-content: right;
-  flex: content;
   flex-direction: row;
-  
+  width: 40%;
+  height:40%;
 }

@@ -41,7 +41,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <nav>
           <div className="logo"><h1>Annead</h1></div>
           <Link className="link" to="/"><h3>Casa|Home</h3></Link>
-          <img src={logo} width="20px" height="20px" className="logoImg"/>
+          <img src={logo} className="logoImg"/>
         </nav>
         <div id="detail">
           <div className="container">
