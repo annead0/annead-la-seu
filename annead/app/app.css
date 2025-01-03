@@ -1,7 +1,7 @@
 
 :root{
   --col:blanchedalmond;
-  --font:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  --font:Impact, Haettenschweiler, 'Arial Narrow Bold';
 }
 html,
 body {
