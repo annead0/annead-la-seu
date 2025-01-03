@@ -32,6 +32,9 @@ nav{
   font-family: var(--font1);
   justify-content: center;
   flex-direction: row;
+  width:90%;
+  position: relative;
+  height:60%
 }
 
 Link.link{
