@@ -37,8 +37,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <nav>
-          <div className="logo">Annead</div>
-          <Link className="link" to="/">Casa|Home</Link>
+          <div className="logo"><h1>Annead</h1></div>
+          <Link className="link" to="/"><h3>Casa|Home</h3></Link>
         </nav>
         <div id="detail">
           <div className="container">

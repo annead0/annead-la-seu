@@ -28,7 +28,9 @@ nav{
 }
 .container{
   background-color:var(--col);
-  font-family: var(--font1)
+  font-family: var(--font1);
+  justify-content: center;
+  flex-direction: row;
 }
 
 Link.link{
