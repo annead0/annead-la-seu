@@ -18,6 +18,7 @@ nav{
   box-shadow:5px 10px 5px gold;
   border-width:1px;
   border-color: olivedrab;
+  font-family: var(--font);
 }
 .logo{
   text-align: left;
