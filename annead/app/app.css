@@ -24,7 +24,8 @@ nav{
   font-family: var(--font2);
 }
 .logo{
-  text-align: left;
+  text-align: center;
+  box-shadow: 1px 1px 1px aqua;
 }
 .container{
   background-color:var(--col);
