@@ -41,7 +41,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <Link className="link" to="/">Casa|Home</Link>
         </nav>
         <div id="detail">
+          <div className="container">
           <Outlet/>
+          </div>
         </div>
       </body>
     </html>
