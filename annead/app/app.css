@@ -45,6 +45,6 @@ img .logoImg{
   position: fixed;
   justify-content: right;
   flex-direction: row;
-  width: 1%;
-  height:1%;
+  width: 80px;
+  height:80px;
 }
